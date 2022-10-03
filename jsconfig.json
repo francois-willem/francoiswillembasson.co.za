@@ -1,0 +1,17 @@
+{
+  "include": ["./src/**/*"],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@API": ["src/services/API.js"],
+      "@Config": ["src/config.js"],
+      "@Service/*": ["src/services/*"],
+      "@Component/*": ["src/components/*"],
+      "@View/*": ["src/views/*"],
+      "@MasterStyle": ["src/scss/master.scss"],
+      "@Asset/*": ["src/assets/*"],
+      "@Test/*": ["__test__/*"],
+      "@/*": ["src/*"]
+    }
+  }
+}

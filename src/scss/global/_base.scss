@@ -1,0 +1,58 @@
+
+// @font-face {
+//   font-family: 'QuasimodaRegular';
+//   src: url('~@Asset/fonts/QuasimodaRegular.woff') format('woff'),
+//       url('~@Asset/fonts/QuasimodaRegular.woff2') format('woff2'),
+//       url('~@Asset/fonts/QuasimodaRegular.ttf') format('truetype');
+// }
+
+@font-face {
+  font-family: 'FancyFont';
+  src: url('~@Asset/fonts/fancyfont.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'FuturaLight';
+  src: url('~@Asset/fonts/FuturaLight.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'HeadersFont';
+  src: url('~@Asset/fonts/headersfont.woff2') format('woff2');
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html { height: 100%; }
+body { height: 100%; }
+.app { height: 100%; }
+.page-content { height: 100%; }
+//TODO: Adjust for different screen sizes
+// the direct child of any view
+.page-content .fill-page { min-height: calc(100% - 60px) }
+
+body {
+    font-family: "FuturaLight", Helvetica, Arial, sans-serif;
+    // font-family: sans-serif;
+    line-height: 1.2;
+    font-size: 16px;
+    box-sizing: border-box;
+    background-color: #121212;
+}
+
+// container always requires a div with display:flex in it, for this padding to work correctly.
+.container { 
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+// .page-content {
+//   padding-top: 90px;
+//   @media only screen and (min-width: 1024px) {
+//     padding-top: 95px;
+//   }
+// }

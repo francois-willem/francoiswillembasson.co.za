@@ -1,0 +1,51 @@
+input[type=text], input[type=number], input[type=date], , input[type=email] {
+    display: block;
+    padding: 1rem;
+    position: relative;
+    background-color: transparent;
+    font-size: .875rem;
+    border: 1px solid #d2d6dc;
+    border-radius: 6px;
+    text-transform: none;
+    &::placeholder {
+        color: #808080;
+        text-transform: uppercase;
+    }
+
+    &.has-error {
+      border: 1px solid red;
+    }
+}
+
+select {
+    display: block;
+    padding: 1rem;
+    position: relative;
+    background-color: transparent;
+    font-size: .875rem;
+    border: 1px solid #d2d6dc;
+    border-radius: 6px;
+}
+
+.form-checkbox-single {
+    display: flex;
+
+    .checkbox {
+      input[type=checkbox] {
+        width: 25px;
+        height: 25px;
+        cursor: pointer;
+      }
+    }
+    .text {
+      flex-grow: 1;
+      font-size: 14px;
+      color: rgb(107, 114, 128);
+      padding: 0 0 0 15px;
+
+        &.center { // remove for multiline text
+            display: flex;
+            align-items: center;
+        }
+    }
+  }

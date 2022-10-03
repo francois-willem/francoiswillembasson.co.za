@@ -1,0 +1,102 @@
+{
+  "name": "starter-vue-vuex-scss",
+  "description": "A lightweight Vue.js starter including Vuex, SCSS, Vue Router and Axios.",
+  "version": "1.0.0",
+  "main": "src/main.js",
+  "license": "MIT",
+  "author": "Quentin Raimbault <quentin.raimbault@gmail.com>",
+  "sassLintConfig": ".sass-lint.yml",
+  "repository": {
+    "url": "https://github.com/QRaimbault/vue-js-starter-scss",
+    "type": "git"
+  },
+  "bugs": {
+    "url": "https://github.com/QRaimbault/vue-js-starter-scss/issues",
+    "email": "quentin.raimbault@gmail.com"
+  },
+  "homepage": "https://qraimbault.github.io/vue-js-starter-scss/#/",
+  "keywords": [
+    "vue",
+    "vuejs",
+    "starter",
+    "vuex",
+    "axios-vue",
+    "sass",
+    "scss",
+    "vue-router",
+    "vuejs2",
+    "vue2",
+    "jest",
+    "scss-styles"
+  ],
+  "scripts": {
+    "start": "cross-env NODE_ENV=development --env.TARGET_ENV=staging node_modules/.bin/webpack-dev-server --history-api-fallback",
+    "build": "cross-env NODE_ENV=production webpack",
+    "build-staging": "cross-env NODE_ENV=production --env.TARGET_ENV=staging webpack",
+    "serve": "cross-env NODE_ENV=production node bin/spa-server.js",
+    "lint-js": "eslint --ext .js,.vue src",
+    "lint-js-fix": "eslint --ext .js,.vue src --fix",
+    "lint-scss": "sass-lint -c ./.sass-lint.yml",
+    "unit": "jest"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "vue"
+    ],
+    "transform": {
+      "^.+\\.js$": "<rootDir>/node_modules/babel-jest",
+      ".*\\.(vue)$": "<rootDir>/node_modules/vue-jest"
+    },
+    "moduleNameMapper": {
+      "\\.(css|jpg|jpeg|png|webp|scss|sass|svg|eot|woff|woff2|ttf|otf|ico)$": "<rootDir>/__test__/empty-module.js"
+    }
+  },
+  "dependencies": {
+    "@gtm-support/vue2-gtm": "^1.1.0",
+    "axios": "^0.19.2",
+    "luxon": "^2.0.1",
+    "vue": "^2.6.11",
+    "vue-cookie": "^1.1.4",
+    "vue-meta": "^2.4.0",
+    "vue-router": "^3.5.2",
+    "vuex": "^3.5.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
+    "@babel/preset-env": "^7.11.5",
+    "@vue/test-utils": "^1.0.3",
+    "babel-core": "^7.0.0-0",
+    "babel-jest": "^26.5.2",
+    "babel-loader": "^8.1.0",
+    "babel-preset-env": "^1.7.0",
+    "copy-webpack-plugin": "^6.0.3",
+    "cross-env": "^7.0.2",
+    "css-loader": "^5.2.6",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-vue": "^6.2.2",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^4.3.0",
+    "mini-css-extract-plugin": "^1.0.0",
+    "node-sass": "^4.14.1",
+    "open": "^7.3.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.4",
+    "regenerator-runtime": "^0.13.7",
+    "resolve-url-loader": "^3.1.1",
+    "sass-loader": "^10.0.3",
+    "style-loader": "^1.2.1",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "url-loader": "^4.1.1",
+    "vue-eslint-parser": "^7.1.0",
+    "vue-jest": "^3.0.7",
+    "vue-loader": "^15.9.3",
+    "vue-template-compiler": "^2.6.11",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  }
+}
