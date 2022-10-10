@@ -1,6 +1,15 @@
 <template>
   <main class="page-content">
-    <main-footer></main-footer>
+    <div class="main-menus">
+      <sidebar-menu></sidebar-menu>
+      <div class="content">
+         <category-selector></category-selector>
+         <div class="video-content-container">
+          <video-content></video-content>
+        </div>
+      </div>
+    </div>
+    <!-- <main-footer></main-footer> -->
   </main>
 </template>
 
@@ -8,11 +17,17 @@
 
 
 import MainFooter from '@Component/Home/Footer.vue'
+import SidebarMenu from '@Component/Layout/SidebarMenu.vue'
+import CategorySelector from '@Component/Layout/CategorySelector.vue'
+import VideoContent from '@Component/Layout/VideoContent.vue'
 
 export default {
   name: 'Home',
   components: {
     MainFooter,
+    SidebarMenu,
+    CategorySelector,
+    VideoContent,
   },
   data() {
     return {
@@ -22,6 +37,10 @@ export default {
 </script>
 <style lang="scss" scoped>
 @import '../scss/partials/variables';
+
+.main-menus {
+  display: flex;
+}
 
 
 </style>

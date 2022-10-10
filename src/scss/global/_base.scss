@@ -34,12 +34,16 @@ body { height: 100%; }
 .page-content .fill-page { min-height: calc(100% - 60px) }
 
 body {
-    font-family: "FuturaLight", Helvetica, Arial, sans-serif;
+    font-family: Arial, sans-serif;
     // font-family: sans-serif;
     line-height: 1.2;
     font-size: 16px;
     box-sizing: border-box;
     background-color: #121212;
+}
+
+.page-content {
+  padding-top: 56px;
 }
 
 // container always requires a div with display:flex in it, for this padding to work correctly.
