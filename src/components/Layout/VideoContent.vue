@@ -30,7 +30,7 @@
         </div>
       </div>
 
-      <div class="video">
+          <div class="video">
         <div class="video-thumbnail">
 
         </div>
@@ -39,7 +39,21 @@
 
           </div>
           <div class="video-description">
-
+            <div class="video-description-title">
+              
+            </div> 
+            <div class="video-description-channel">
+              
+            </div>
+            <div class="video-description-views-details">
+              <div class="video-description-views">
+                
+              </div>
+              <div class="video-description-posted">
+                
+              </div>
+            </div>
+            
           </div>
         </div>
       </div>
@@ -53,21 +67,21 @@
 
           </div>
           <div class="video-description">
-
-          </div>
-        </div>
-      </div>
-
-      <div class="video">
-        <div class="video-thumbnail">
-
-        </div>
-        <div class="video-details">
-          <div class="video-channel">
-
-          </div>
-          <div class="video-description">
-
+            <div class="video-description-title">
+              
+            </div> 
+            <div class="video-description-channel">
+              
+            </div>
+            <div class="video-description-views-details">
+              <div class="video-description-views">
+                
+              </div>
+              <div class="video-description-posted">
+                
+              </div>
+            </div>
+            
           </div>
         </div>
       </div>
@@ -81,34 +95,21 @@
 
           </div>
           <div class="video-description">
-
-          </div>
-        </div>
-      </div>
-
-      <div class="video">
-        <div class="video-thumbnail">
-        </div>
-        <div class="video-details">
-          <div class="video-channel">
-
-          </div>
-          <div class="video-description">
-
-          </div>
-        </div>
-      </div>
-
-      <div class="video">
-        <div class="video-thumbnail">
-
-        </div>
-        <div class="video-details">
-          <div class="video-channel">
-
-          </div>
-          <div class="video-description">
-
+            <div class="video-description-title">
+              
+            </div> 
+            <div class="video-description-channel">
+              
+            </div>
+            <div class="video-description-views-details">
+              <div class="video-description-views">
+                
+              </div>
+              <div class="video-description-posted">
+                
+              </div>
+            </div>
+            
           </div>
         </div>
       </div>
@@ -122,7 +123,105 @@
 
           </div>
           <div class="video-description">
+            <div class="video-description-title">
+              
+            </div> 
+            <div class="video-description-channel">
+              
+            </div>
+            <div class="video-description-views-details">
+              <div class="video-description-views">
+                
+              </div>
+              <div class="video-description-posted">
+                
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
 
+      <div class="video">
+        <div class="video-thumbnail">
+
+        </div>
+        <div class="video-details">
+          <div class="video-channel">
+
+          </div>
+          <div class="video-description">
+            <div class="video-description-title">
+              
+            </div> 
+            <div class="video-description-channel">
+              
+            </div>
+            <div class="video-description-views-details">
+              <div class="video-description-views">
+                
+              </div>
+              <div class="video-description-posted">
+                
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+      <div class="video">
+        <div class="video-thumbnail">
+
+        </div>
+        <div class="video-details">
+          <div class="video-channel">
+
+          </div>
+          <div class="video-description">
+            <div class="video-description-title">
+              
+            </div> 
+            <div class="video-description-channel">
+              
+            </div>
+            <div class="video-description-views-details">
+              <div class="video-description-views">
+                
+              </div>
+              <div class="video-description-posted">
+                
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+      <div class="video">
+        <div class="video-thumbnail">
+
+        </div>
+        <div class="video-details">
+          <div class="video-channel">
+
+          </div>
+          <div class="video-description">
+            <div class="video-description-title">
+              
+            </div> 
+            <div class="video-description-channel">
+              
+            </div>
+            <div class="video-description-views-details">
+              <div class="video-description-views">
+                
+              </div>
+              <div class="video-description-posted">
+                
+              </div>
+            </div>
+            
           </div>
         </div>
       </div>
@@ -161,6 +260,7 @@ export default {
 .video-thumbnail {
   height: 200px;
   width: 360px;
+  background-color: #bbbbbb;
 }
 
 .video-details {

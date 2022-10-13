@@ -16,13 +16,15 @@
         <form action="" class="search-box">
           <div class="search-container">
             <div class="input-container">
-              <input type="" placeholder="Search" name="q">
+              <search-icon-before></search-icon-before>
+              <input class="search-bar-input" type="" placeholder="Search" name="q">
+              <button type="submit">
+                <div class="search-icon-container">
+                  <search-icon></search-icon>
+                </div>
+              </button>
             </div>
-            <button type="submit">
-              <div class="search-icon-container">
-                <search-icon></search-icon>
-              </div>
-            </button>
+            
             <div class="voice-search-container">
                 <voice-search></voice-search>
               </div>
@@ -53,6 +55,7 @@ import SearchIcon from '@Component/Partials/svg/SearchIcon.vue'
 import VoiceSearch from '@Component/Partials/svg/VoiceSearch.vue'
 import OptionDots from '@Component/Partials/svg/OptionDots.vue'
 import SignInIcon from '@Component/Partials/svg/SignInIcon.vue'
+import SearchIconBefore from '@Component/Partials/svg/SearchIconBefore.vue'
 
 export default {
   components: { 
@@ -62,6 +65,7 @@ export default {
     VoiceSearch,
     OptionDots,
     SignInIcon,
+    SearchIconBefore,
   },
   name: 'MainHeader',
   data() {
@@ -71,6 +75,9 @@ export default {
       }
     }
   },
+  methods: {
+
+  }
 }
 </script>
 <style lang="scss" scoped>
@@ -130,6 +137,7 @@ export default {
 }
 
 .search-box {
+  display: flex;
   max-width: 728px;
   height: 40px;
   width: 100%;
@@ -140,7 +148,27 @@ export default {
 }
 
 .input-container {
+  display: flex;
   height: 100%;
+  align-items: center;
+  justify-content: center;
+  margin-left: 34px;
+
+  :focus-within {
+    padding-left: 34px;
+    margin-left: 0;
+    .search-icon-before {
+      display: none;
+    }
+  }
+}
+
+.search-icon-before {
+  position: absolute; 
+  left: 660px;
+  height: 20px;
+  width: 20px;
+  fill: #ffffff;
 }
 
 input {
@@ -150,6 +178,15 @@ input {
   width: 525px;
   height: 40px;
   border: 1px solid rgb(48, 48, 48);
+  color: #ffffff;
+  margin-left: 34px;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border: 1px solid #1c62b9;
+  width: 558px;
+  margin-left: 0;
 }
 
 button {

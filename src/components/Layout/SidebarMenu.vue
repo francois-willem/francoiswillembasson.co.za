@@ -178,11 +178,11 @@ export default {
 
 .sidebar-menu {
   background-color: #212121;
-  width: 240px;
+  min-width: 240px;
+  width: 100%;
 }
 
 .sidebar-guide-top-links {
-  height: 185px;
   padding: 12px 0;
   border-bottom: 1px solid #4e4e4e;
 }
