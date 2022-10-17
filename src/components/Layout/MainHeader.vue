@@ -154,16 +154,21 @@ export default {
   justify-content: center;
   margin-left: 34px;
 
-  :focus-within {
+  &:focus-within {
     padding-left: 34px;
     margin-left: 0;
     .search-icon-before {
-      display: none;
+      display: block;
+    }
+
+    input {
+      padding-left: 34px;
     }
   }
 }
 
 .search-icon-before {
+  display: none;
   position: absolute; 
   left: 660px;
   height: 20px;

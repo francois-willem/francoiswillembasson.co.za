@@ -192,6 +192,16 @@ export default {
   align-items: center;
   height: 40px;
   padding: 0 24px;
+
+  &:hover {
+    background: gray;
+    cursor: pointer;
+  }
+}
+
+.sidebar-guide-home:hover {
+  background: gray;
+  cursor: pointer;
 }
 
 .home-icon {

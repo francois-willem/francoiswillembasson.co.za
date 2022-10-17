@@ -30,24 +30,24 @@
         </div>
       </div>
 
-          <div class="video">
+      <div v-for="(featuredItem, index) in featured" :key="'featured-item' + index" class="video">
         <div class="video-thumbnail">
 
         </div>
         <div class="video-details">
           <div class="video-channel">
-
+            Christian
           </div>
           <div class="video-description">
             <div class="video-description-title">
-              
+              This is my title
             </div> 
             <div class="video-description-channel">
               
             </div>
             <div class="video-description-views-details">
               <div class="video-description-views">
-                
+                {{ featuredItem.video.views }}
               </div>
               <div class="video-description-posted">
                 
@@ -58,174 +58,6 @@
         </div>
       </div>
 
-      <div class="video">
-        <div class="video-thumbnail">
-
-        </div>
-        <div class="video-details">
-          <div class="video-channel">
-
-          </div>
-          <div class="video-description">
-            <div class="video-description-title">
-              
-            </div> 
-            <div class="video-description-channel">
-              
-            </div>
-            <div class="video-description-views-details">
-              <div class="video-description-views">
-                
-              </div>
-              <div class="video-description-posted">
-                
-              </div>
-            </div>
-            
-          </div>
-        </div>
-      </div>
-      
-      <div class="video">
-        <div class="video-thumbnail">
-
-        </div>
-        <div class="video-details">
-          <div class="video-channel">
-
-          </div>
-          <div class="video-description">
-            <div class="video-description-title">
-              
-            </div> 
-            <div class="video-description-channel">
-              
-            </div>
-            <div class="video-description-views-details">
-              <div class="video-description-views">
-                
-              </div>
-              <div class="video-description-posted">
-                
-              </div>
-            </div>
-            
-          </div>
-        </div>
-      </div>
-
-      <div class="video">
-        <div class="video-thumbnail">
-
-        </div>
-        <div class="video-details">
-          <div class="video-channel">
-
-          </div>
-          <div class="video-description">
-            <div class="video-description-title">
-              
-            </div> 
-            <div class="video-description-channel">
-              
-            </div>
-            <div class="video-description-views-details">
-              <div class="video-description-views">
-                
-              </div>
-              <div class="video-description-posted">
-                
-              </div>
-            </div>
-            
-          </div>
-        </div>
-      </div>
-
-      <div class="video">
-        <div class="video-thumbnail">
-
-        </div>
-        <div class="video-details">
-          <div class="video-channel">
-
-          </div>
-          <div class="video-description">
-            <div class="video-description-title">
-              
-            </div> 
-            <div class="video-description-channel">
-              
-            </div>
-            <div class="video-description-views-details">
-              <div class="video-description-views">
-                
-              </div>
-              <div class="video-description-posted">
-                
-              </div>
-            </div>
-            
-          </div>
-        </div>
-      </div>
-
-      <div class="video">
-        <div class="video-thumbnail">
-
-        </div>
-        <div class="video-details">
-          <div class="video-channel">
-
-          </div>
-          <div class="video-description">
-            <div class="video-description-title">
-              
-            </div> 
-            <div class="video-description-channel">
-              
-            </div>
-            <div class="video-description-views-details">
-              <div class="video-description-views">
-                
-              </div>
-              <div class="video-description-posted">
-                
-              </div>
-            </div>
-            
-          </div>
-        </div>
-      </div>
-
-      <div class="video">
-        <div class="video-thumbnail">
-
-        </div>
-        <div class="video-details">
-          <div class="video-channel">
-
-          </div>
-          <div class="video-description">
-            <div class="video-description-title">
-              
-            </div> 
-            <div class="video-description-channel">
-              
-            </div>
-            <div class="video-description-views-details">
-              <div class="video-description-views">
-                
-              </div>
-              <div class="video-description-posted">
-                
-              </div>
-            </div>
-            
-          </div>
-        </div>
-      </div>
-      
     </div>
   </div>
 
@@ -233,9 +65,25 @@
 </template>
 
 <script>
+
+import { getFeed } from '@Service/ApiCall.js';
+
 export default {
   name: 'VideoContent',
+  data() {
+    return {
+      featured: [],
+    }
+  },
+  created() {
+    console.log('Making API call')
+    const apiCallResponse = getFeed()
 
+    this.featured = apiCallResponse.data.featured
+
+    console.log('component data')
+    console.log(this.featured)
+  },
 }
 </script>
 
