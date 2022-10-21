@@ -1,35 +1,6 @@
 <template>
   <div class="content-block-one">
     <div class="content-row">
-<!--
-      <div class="video">
-        <div class="video-thumbnail">
-          <img src="https://i.ytimg.com/vi/c6jomRCiNP0/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDw7J4QIyZtBXOb3z5qd2gdYVKcMw" alt="">
-        </div>
-        <div class="video-details">
-          <div class="video-channel">
-            <img src="https://yt3.ggpht.com/ytc/AMLnZu98oGB-B3Sq7raKdizZUqJl3xVS3B9lkqSrsWDm_g=s68-c-k-c0x00ffffff-no-rj" alt="">
-          </div>
-          <div class="video-description">
-            <div class="video-description-title">
-              992 GT3 Crash on the Dragon - My Rarest Car Totaled
-            </div> 
-            <div class="video-description-channel">
-              Adam LZ
-            </div>
-            <div class="video-description-views-details">
-              <div class="video-description-views">
-                1M views •
-              </div>
-              <div class="video-description-posted">
-                1 week ago
-              </div>
-            </div>
-            
-          </div>
-        </div>
-      </div>
--->
 
       <div class="video">
         <div v-for="(featuredItem, index) in featured" :key="'featured-item' + index" class="video">
@@ -86,7 +57,6 @@ export default {
     console.log('component data')
     console.log(this.featured)
   },
-
 }
 </script>
 

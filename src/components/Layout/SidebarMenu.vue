@@ -199,6 +199,11 @@ export default {
   }
 }
 
+.sidebar-guide-home:hover {
+  background-color: #4e4e4e;
+  cursor: pointer;
+}
+
 .sidebar-icon {
   height: 24px;
   width: 24px;
