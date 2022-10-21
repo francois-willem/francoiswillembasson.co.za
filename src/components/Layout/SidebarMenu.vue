@@ -1,59 +1,59 @@
 <template>
   <div class="sidebar-menu"> <!-- GREEN -->
     <div class="sidebar-guide-top-links"> <!-- BLUE -->
-      <div class="sidebar-guide-home"> <!-- RED -->
+      <div class="sidebar-guide"> <!-- RED -->
 
         <div class="sidebar-guide-home-icon"> <!-- YELLOW-->
           <home-icon></home-icon>
         </div>
-        <div class="sidebar-guide-home-description">
+        <div class="sidebar-guide-description">
           Home
         </div>
       </div>
 
-      <div class="sidebar-guide-explore"> <!-- YELLOW-->
+      <div class="sidebar-guide"> <!-- YELLOW-->
         <div class="sidebar-guide-explore-icon">
           <explore-icon></explore-icon>
         </div>
-        <div class="sidebar-guide-explore-description">
+        <div class="sidebar-guide-description">
           Explore
         </div>
       </div>
 
-      <div class="sidebar-guide-shorts"> <!-- YELLOW-->
+      <div class="sidebar-guide"> <!-- YELLOW-->
         <div class="sidebar-guide-shorts-icon">
           <shorts-icon></shorts-icon>
         </div>
-        <div class="sidebar-guide-shorts-description">
+        <div class="sidebar-guide-description">
           Shorts
         </div>
       </div>
 
-      <div class="sidebar-guide-subscriptions"> <!-- YELLOW-->
+      <div class="sidebar-guide"> <!-- YELLOW-->
         <div class="sidebar-guide-subscriptions-icon">
           <subscriptions-icon></subscriptions-icon>
         </div>
-        <div class="sidebar-guide-subscriptions-description">
+        <div class="sidebar-guide-description">
           Subscriptions
         </div>
       </div>
     </div>
 
     <div class="sidebar-guide-account-links"> <!-- BLUE -->
-      <div class="sidebar-guide-library">
+      <div class="sidebar-guide">
         <div class="sidebar-guide-library-icon">
           <library-icon></library-icon>
         </div>
-        <div class="sidebar-guide-library-description">
+        <div class="sidebar-guide-description">
           Library
         </div>
       </div>
 
-      <div class="sidebar-guide-history">
+      <div class="sidebar-guide">
         <div class="sidebar-guide-history-icon">
           <history-icon></history-icon>
         </div>
-        <div class="sidebar-guide-history-description">
+        <div class="sidebar-guide-description">
           History
         </div>
       </div>
@@ -75,43 +75,43 @@
       <div class="sidebar-guide-explore-explore">
         EXPLORE
       </div>
-      <div class="sidebar-guide-music">
-        <div class="sidebar-guide-music-icon">
+      <div class="sidebar-guide-explore">
+        <div class="sidebar-guide-explore-icon">
           <img :src="images.MusicIcon" alt="">
         </div>
-        <div class="sidebar-guide-music-description">
+        <div class="sidebar-guide-explore-description">
           Music
         </div>
       </div>
-      <div class="sidebar-guide-sports">
-        <div class="sidebar-guide-sports-icon">
+      <div class="sidebar-guide-explore">
+        <div class="sidebar-guide-explore-icon">
           <img :src="images.SportsIcon" alt="">
         </div>
-        <div class="sidebar-guide-sports-description">
+        <div class="sidebar-guide-explore-description">
           Sports
         </div>
       </div>
-      <div class="sidebar-guide-gaming">
-        <div class="sidebar-guide-gaming-icon">
+      <div class="sidebar-guide-explore">
+        <div class="sidebar-guide-explore-icon">
           <img :src="images.GamingIcon" alt="">
         </div>
-        <div class="sidebar-guide-gaming-description">
+        <div class="sidebar-guide-explore-description">
           Gaming
         </div>
       </div>
-      <div class="sidebar-guide-news">
-        <div class="sidebar-guide-news-icon">
+      <div class="sidebar-guide-explore">
+        <div class="sidebar-guide-explore-icon">
           <img :src="images.NewsIcon" alt="">
         </div>
-        <div class="sidebar-guide-news-description">
+        <div class="sidebar-guide-explore-description">
           News
         </div>
       </div>
-      <div class="sidebar-guide-360-video">
-        <div class="sidebar-guide-360-icon">
+      <div class="sidebar-guide-explore">
+        <div class="sidebar-guide-explore-icon">
           <img :src="images.DegreeIcon" alt="">
         </div>
-        <div class="sidebar-guide-360-video-description">
+        <div class="sidebar-guide-explore-description">
           360° Video
         </div>
       </div>
@@ -187,78 +187,26 @@ export default {
   border-bottom: 1px solid #4e4e4e;
 }
 
-.sidebar-guide-home {
+.sidebar-guide {
   display: flex;
   align-items: center;
   height: 40px;
   padding: 0 24px;
+
+  &:hover {
+    background-color: #4e4e4e;
+    cursor: pointer;
+  }
 }
 
-.home-icon {
+.sidebar-icon {
   height: 24px;
   width: 24px;
   margin: 0 24px 0 0;
   fill: #ffffff;
 }
 
-.sidebar-guide-home-description {
-  font-size: 14px;
-  color: #ffffff;
-}
-
-.sidebar-guide-explore {
-  display: flex;
-  align-items: center;
-  height: 40px;
-  padding: 0 24px;
-}
-
-.explore-icon {
-  height: 24px;
-  width: 24px;
-  margin: 0 24px 0 0;
-  fill: #ffffff;
-}
-
-.sidebar-guide-explore-description {
-  font-size: 14px;
-  color: #ffffff;
-}
-
-.sidebar-guide-shorts {
-  display: flex;
-  align-items: center;
-  height: 40px;
-  padding: 0 24px;
-}
-
-.shorts-icon {
-  height: 24px;
-  width: 24px;
-  margin: 0 24px 0 0;
-  fill: #ffffff;
-}
-
-.sidebar-guide-shorts-description {
-  font-size: 14px;
-  color: #ffffff;
-}
-
-.sidebar-guide-subscriptions {
-  display: flex;
-  align-items: center;
-  height: 40px;
-  padding: 0 24px;
-}
-
-.subscriptions-icon {
-  height: 24px;
-  width: 24px;
-  margin: 0 24px 0 0;
-  fill: #ffffff;
-}
-
-.sidebar-guide-subscriptions-description {
+.sidebar-guide-description {
   font-size: 14px;
   color: #ffffff;
 }
@@ -275,35 +223,11 @@ export default {
   padding: 0 24px;
 }
 
-.library-icon {
-  height: 24px;
-  width: 24px;
-  margin: 0 24px 0 0;
-  fill: #ffffff;
-}
-
-.sidebar-guide-library-description {
-  font-size: 14px;
-  color: #ffffff;
-}
-
 .sidebar-guide-history {
   display: flex;
   align-items: center;
   height: 40px;
   padding: 0 24px;
-}
-
-.history-icon {
-  height: 24px;
-  width: 24px;
-  margin: 0 24px 0 0;
-  fill: #ffffff;
-}
-
-.sidebar-guide-history-description {
-  font-size: 14px;
-  color: #ffffff;
 }
 
 .sidebar-guide-login {
@@ -353,97 +277,26 @@ export default {
   font-size: 14px;
 }
 
-.sidebar-guide-music {
+.sidebar-guide-explore {
   display: flex;
   align-items: center;
   height: 40px;
   padding: 0 24px;
+
+  &:hover {
+    background-color: #4e4e4e;
+    cursor: pointer;
+  }
 }
 
-.sidebar-guide-music-icon img {
+.sidebar-guide-explore-icon img {
   height: 24px;
   width: 24px;
   border-radius: 50%;
   margin-right: 24px;
 }
 
-.sidebar-guide-music-description {
-  color: #ffffff;
-  font-size: 14px;
-}
-
-.sidebar-guide-sports {
-  display: flex;
-  align-items: center;
-  height: 40px;
-  padding: 0 24px;
-}
-
-.sidebar-guide-sports-icon img {
-  height: 24px;
-  width: 24px;
-  border-radius: 50%;
-  margin-right: 24px;
-}
-
-.sidebar-guide-sports-description {
-  color: #ffffff;
-  font-size: 14px;
-}
-
-.sidebar-guide-gaming {
-  display: flex;
-  align-items: center;
-  height: 40px;
-  padding: 0 24px;
-}
-
-.sidebar-guide-gaming-icon img {
-  height: 24px;
-  width: 24px;
-  border-radius: 50%;
-  margin-right: 24px;
-}
-
-.sidebar-guide-gaming-description {
-  color: #ffffff;
-  font-size: 14px;
-}
-
-.sidebar-guide-news {
-  display: flex;
-  align-items: center;
-  height: 40px;
-  padding: 0 24px;
-}
-
-.sidebar-guide-news-icon img {
-  height: 24px;
-  width: 24px;
-  border-radius: 50%;
-  margin-right: 24px;
-}
-
-.sidebar-guide-news-description {
-  color: #ffffff;
-  font-size: 14px;
-}
-
-.sidebar-guide-360-video {
-  display: flex;
-  align-items: center;
-  height: 40px;
-  padding: 0 24px;
-}
-
-.sidebar-guide-360-icon img {
-  height: 24px;
-  width: 24px;
-  border-radius: 50%;
-  margin-right: 24px;
-}
-
-.sidebar-guide-360-video-description {
+.sidebar-guide-explore-description {
   color: #ffffff;
   font-size: 14px;
 }
@@ -459,7 +312,11 @@ export default {
   align-items: center;
   height: 40px;
   padding: 0 24px;
-  
+
+  &:hover {
+    background-color: #4e4e4e;
+    cursor: pointer;
+  }
 }
 
 .browse-channel-icon {
@@ -471,7 +328,6 @@ export default {
 
 .browse-channel-description {
   font-size: 14px;
-  
   color: #ffffff;
 }
 

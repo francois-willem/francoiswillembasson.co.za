@@ -1,7 +1,7 @@
 <template>
   <div class="content-block-one">
     <div class="content-row">
-
+<!--
       <div class="video">
         <div class="video-thumbnail">
           <img src="https://i.ytimg.com/vi/c6jomRCiNP0/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDw7J4QIyZtBXOb3z5qd2gdYVKcMw" alt="">
@@ -29,203 +29,37 @@
           </div>
         </div>
       </div>
-
-          <div class="video">
-        <div class="video-thumbnail">
-
-        </div>
-        <div class="video-details">
-          <div class="video-channel">
-
-          </div>
-          <div class="video-description">
-            <div class="video-description-title">
-              
-            </div> 
-            <div class="video-description-channel">
-              
-            </div>
-            <div class="video-description-views-details">
-              <div class="video-description-views">
-                
-              </div>
-              <div class="video-description-posted">
-                
-              </div>
-            </div>
-            
-          </div>
-        </div>
-      </div>
+-->
 
       <div class="video">
+        <div v-for="(featuredItem, index) in featured" :key="'featured-item' + index" class="video">
         <div class="video-thumbnail">
-
+          
         </div>
         <div class="video-details">
           <div class="video-channel">
-
+            
           </div>
           <div class="video-description">
             <div class="video-description-title">
-              
+              {{ featuredItem.video.title }}
             </div> 
             <div class="video-description-channel">
-              
+              {{ featuredItem.channel.name }}
             </div>
             <div class="video-description-views-details">
               <div class="video-description-views">
-                
+                {{ featuredItem.video.views }}
               </div>
               <div class="video-description-posted">
-                
+                {{ featuredItem.video.created }}
               </div>
             </div>
-            
           </div>
         </div>
-      </div>
-      
-      <div class="video">
-        <div class="video-thumbnail">
-
-        </div>
-        <div class="video-details">
-          <div class="video-channel">
-
-          </div>
-          <div class="video-description">
-            <div class="video-description-title">
-              
-            </div> 
-            <div class="video-description-channel">
-              
-            </div>
-            <div class="video-description-views-details">
-              <div class="video-description-views">
-                
-              </div>
-              <div class="video-description-posted">
-                
-              </div>
-            </div>
-            
-          </div>
         </div>
       </div>
 
-      <div class="video">
-        <div class="video-thumbnail">
-
-        </div>
-        <div class="video-details">
-          <div class="video-channel">
-
-          </div>
-          <div class="video-description">
-            <div class="video-description-title">
-              
-            </div> 
-            <div class="video-description-channel">
-              
-            </div>
-            <div class="video-description-views-details">
-              <div class="video-description-views">
-                
-              </div>
-              <div class="video-description-posted">
-                
-              </div>
-            </div>
-            
-          </div>
-        </div>
-      </div>
-
-      <div class="video">
-        <div class="video-thumbnail">
-
-        </div>
-        <div class="video-details">
-          <div class="video-channel">
-
-          </div>
-          <div class="video-description">
-            <div class="video-description-title">
-              
-            </div> 
-            <div class="video-description-channel">
-              
-            </div>
-            <div class="video-description-views-details">
-              <div class="video-description-views">
-                
-              </div>
-              <div class="video-description-posted">
-                
-              </div>
-            </div>
-            
-          </div>
-        </div>
-      </div>
-
-      <div class="video">
-        <div class="video-thumbnail">
-
-        </div>
-        <div class="video-details">
-          <div class="video-channel">
-
-          </div>
-          <div class="video-description">
-            <div class="video-description-title">
-              
-            </div> 
-            <div class="video-description-channel">
-              
-            </div>
-            <div class="video-description-views-details">
-              <div class="video-description-views">
-                
-              </div>
-              <div class="video-description-posted">
-                
-              </div>
-            </div>
-            
-          </div>
-        </div>
-      </div>
-
-      <div class="video">
-        <div class="video-thumbnail">
-
-        </div>
-        <div class="video-details">
-          <div class="video-channel">
-
-          </div>
-          <div class="video-description">
-            <div class="video-description-title">
-              
-            </div> 
-            <div class="video-description-channel">
-              
-            </div>
-            <div class="video-description-views-details">
-              <div class="video-description-views">
-                
-              </div>
-              <div class="video-description-posted">
-                
-              </div>
-            </div>
-            
-          </div>
-        </div>
-      </div>
-      
     </div>
   </div>
 
@@ -233,8 +67,25 @@
 </template>
 
 <script>
+
+import { getFeed } from '@Service/ApiCall.js';
+
 export default {
   name: 'VideoContent',
+  data() {
+    return {
+      featured: [],
+    }
+  },
+  created() {
+    console.log('Making API call')
+    const apiCallResponse = getFeed()
+
+    this.featured = apiCallResponse.data.featured
+
+    console.log('component data')
+    console.log(this.featured)
+  },
 
 }
 </script>
@@ -249,6 +100,7 @@ export default {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  flex-direction: row;
 }
 
 .video {

@@ -70,9 +70,7 @@ export default {
   name: 'MainHeader',
   data() {
     return {
-      images: {
-        Image1,
-      }
+      
     }
   },
   methods: {
@@ -148,24 +146,31 @@ export default {
 }
 
 .input-container {
+  position: relative;
   display: flex;
   height: 100%;
   align-items: center;
   justify-content: center;
   margin-left: 34px;
 
-  :focus-within {
+  &:focus-within {
     padding-left: 34px;
     margin-left: 0;
+
+    input {
+      padding-left: 34px;
+    }
+
     .search-icon-before {
-      display: none;
+      display: block;
     }
   }
 }
 
 .search-icon-before {
+  display: none;
   position: absolute; 
-  left: 660px;
+  left: 44px;
   height: 20px;
   width: 20px;
   fill: #ffffff;
