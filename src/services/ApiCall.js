@@ -82,6 +82,64 @@ const getFeed = function () {
   };
 }
 
+const getCategories = function () {
+  return {
+    data: {
+      categories: [
+        {
+          name: 'All',
+          url: '/#all'
+        },
+        {
+          name: 'Music',
+          url: '/#music'
+        },
+        {
+          name: 'Live Football',
+          url: '/#livefootball'
+        },
+        {
+          name: 'FIFA 23',
+          url: '/#'
+        },
+        {
+          name: 'Javascript Frameworks',
+          url: '/#'
+        },
+        {
+          name: 'Sidemen',
+          url: '/#'
+        },
+        {
+          name: 'Motorcycle POV',
+          url: '/#'
+        },
+        {
+          name: 'Film trailers',
+          url: '/#'
+        },
+        {
+          name: 'Drifting',
+          url: '/#'
+        },
+        {
+          name: 'Track day',
+          url: '/#'
+        },
+        {
+          name: 'Thrillers',
+          url: '/#'
+        },
+        {
+          name: 'Manchester United',
+          url: '/#'
+        }
+      ]
+    }
+  };
+}
+
 export {
   getFeed,
+  getCategories,
 }
