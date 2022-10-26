@@ -178,7 +178,7 @@ export default {
 
 .sidebar-menu {
   background-color: #212121;
-  min-width: 240px;
+  max-width: 240px;
   width: 100%;
 }
 

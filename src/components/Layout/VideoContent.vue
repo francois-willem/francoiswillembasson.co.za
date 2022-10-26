@@ -2,14 +2,16 @@
   <div class="content-block-one">
     <div class="content-row">
 
-      <div class="video">
-        <div v-for="(featuredItem, index) in featured" :key="'featured-item' + index" class="video">
+      <div v-for="(featuredItem, index) in featured" :key="'featured-item' + index" class="video">
         <div class="video-thumbnail">
-          
+          <img :src="featuredItem.video.image" :alt="'video thumbnail' + index ">
+          <div class="video-length">
+            {{ featuredItem.video.length }}
+          </div>
         </div>
         <div class="video-details">
           <div class="video-channel">
-            
+            <img :src="featuredItem.channel.featuredImg" :alt="'channel' + index">
           </div>
           <div class="video-description">
             <div class="video-description-title">
@@ -28,8 +30,8 @@
             </div>
           </div>
         </div>
-        </div>
       </div>
+      
 
     </div>
   </div>
@@ -64,25 +66,44 @@ export default {
 
 .content-block-one {
   margin-top: 24px;
+  padding: 0 15px 0 15px;
 }
 
 .content-row {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   flex-wrap: wrap;
   flex-direction: row;
 }
 
 .video {
   height: 300px;
-  width: 360px;
-  margin: 0 10px 40px 10px;
+  width: calc(100% / 4);
+  padding: 0 10px 40px 10px;
 }
 
 .video-thumbnail {
-  height: 200px;
-  width: 360px;
-  background-color: #bbbbbb;
+  position: relative;
+  
+  &:hover {
+    transform: scale(1.15);
+  }
+}
+
+.video-thumbnail img {
+  width: 100%;
+  height: 100%;
+}
+
+.video-length {
+  position: absolute;
+  color: #ffffff;
+  bottom: 8px;
+  background-color: black;
+  right: 4px;
+  font-size: 12px;
+  padding: 3px;
+  font-weight: 900;
 }
 
 .video-details {

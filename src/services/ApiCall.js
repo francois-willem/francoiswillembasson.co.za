@@ -65,7 +65,7 @@ const getFeed = function () {
         {
           video: {
             title: 'My New Mclaren!!?',
-            image: 'https://i.ytimg.com/vi/K2iupCm1CF8/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDNLiUPwLEZw2UtfLYrU7JYM3V7PA',
+            image: 'https://i.ytimg.com/vi/anWLTN03EFo/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDAL1Es9WjWT3OIPH_G5fz_0ek7Jg',
             length: '8:13',
             views: '202k',
             created: '3 days ago',
@@ -86,6 +86,54 @@ const getCategories = function () {
   return {
     data: {
       categories: [
+        {
+          name: 'All',
+          url: '/#all'
+        },
+        {
+          name: 'Music',
+          url: '/#music'
+        },
+        {
+          name: 'Live Football',
+          url: '/#livefootball'
+        },
+        {
+          name: 'FIFA 23',
+          url: '/#'
+        },
+        {
+          name: 'Javascript Frameworks',
+          url: '/#'
+        },
+        {
+          name: 'Sidemen',
+          url: '/#'
+        },
+        {
+          name: 'Motorcycle POV',
+          url: '/#'
+        },
+        {
+          name: 'Film trailers',
+          url: '/#'
+        },
+        {
+          name: 'Drifting',
+          url: '/#'
+        },
+        {
+          name: 'Track day',
+          url: '/#'
+        },
+        {
+          name: 'Thrillers',
+          url: '/#'
+        },
+        {
+          name: 'Manchester United',
+          url: '/#'
+        },
         {
           name: 'All',
           url: '/#all'

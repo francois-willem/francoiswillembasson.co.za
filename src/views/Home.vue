@@ -42,5 +42,10 @@ export default {
   display: flex;
 }
 
+.content {
+  width: calc(100% - 240px);
+  overflow: hidden;
+}
+
 
 </style>

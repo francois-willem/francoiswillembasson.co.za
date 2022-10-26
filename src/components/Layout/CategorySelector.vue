@@ -1,118 +1,145 @@
 <template>
-  <div class="category-container">
-    <div class="category-inner-first-container">
-      <div class="category-description">
-        All
+  <div class="category">
+    <div class="category-container">
+      <div class="category-inner-first-container">
       </div>
-    </div>
-    <div class="category-inner-container">
-      <div class="category-music">
-        Music
+      <div v-for="(categories, index) in categories" :key="'category' + index" class="category-inner-container">
+        {{ categories.name }}
       </div>
-    </div>
-    <div class="category-inner-container">
-      <div class="category-live">
-        Live
+      <!-- <div class="category-inner-container">
+        <div class="category-live">
+          Live
+        </div>
       </div>
-    </div>
-    <div class="category-inner-container">
-      <div class="category-gaming">
-        Gaming
+      <div class="category-inner-container">
+        <div class="category-gaming">
+          Gaming
+        </div>
       </div>
-    </div>
-    <div class="category-inner-container">
-      <div class="category-animated-films">
-        Animated films
+      <div class="category-inner-container">
+        <div class="category-animated-films">
+          Animated films
+        </div>
       </div>
-    </div>
-    <div class="category-inner-container">
-      <div class="category-sports-leagues">
-        Sports leagues
+      <div class="category-inner-container">
+        <div class="category-sports-leagues">
+          Sports leagues
+        </div>
       </div>
-    </div>
-    <div class="category-inner-container">
-      <div class="category-highlight-films">
-        Highlight films
+      <div class="category-inner-container">
+        <div class="category-highlight-films">
+          Highlight films
+        </div>
       </div>
-    </div>
-    <div class="category-inner-container">
-      <div class="category-highlight-films">
-        Premier League
+      <div class="category-inner-container">
+        <div class="category-highlight-films">
+          Premier League
+        </div>
       </div>
-    </div>
-    <div class="category-inner-container">
-      <div class="category-highlight-films">
-        Football
+      <div class="category-inner-container">
+        <div class="category-highlight-films">
+          Football
+        </div>
       </div>
-    </div>
-    <div class="category-inner-container">
-      <div class="category-highlight-films">
-        Game shows
+      <div class="category-inner-container">
+        <div class="category-highlight-films">
+          Game shows
+        </div>
       </div>
-    </div>
-    <div class="category-inner-container">
-      <div class="category-highlight-films">
-        Comedy
+      <div class="category-inner-container">
+        <div class="category-highlight-films">
+          Comedy
+        </div>
       </div>
-    </div>
-    <div class="category-inner-container">
-      <div class="category-highlight-films">
-        Film trailers
+      <div class="category-inner-container">
+        <div class="category-highlight-films">
+          Film trailers
+        </div>
       </div>
-    </div>
-    <div class="category-inner-container">
-      <div class="category-highlight-films">
-        Background music
+      <div class="category-inner-container">
+        <div class="category-highlight-films">
+          Background music
+        </div>
       </div>
-    </div>
-    <div class="category-inner-container">
-      <div class="category-highlight-films">
-        Thrillers
+      <div class="category-inner-container">
+        <div class="category-highlight-films">
+          Thrillers
+        </div>
       </div>
+      <div class="category-inner-container">
+        <div class="category-highlight-films">
+          Deep House
+        </div>
+      </div> -->
+      
     </div>
-    <div class="category-inner-container">
-      <div class="category-highlight-films">
-        Deep House
-      </div>
-    </div>
-    
   </div>
 </template>
 
 <script>
+
+import { getCategories } from '@Service/ApiCall.js';
+
 export default {
+  name: 'Categories',
+  data() {
+    return {
+      categories: [],
+    }
+  },
+  created() {
+    console.log('Making API call')
+    const apiCallResponse = getCategories()
+
+    this.categories = apiCallResponse.data.categories
+
+    console.log('component data')
+    console.log(this.categories)
+
+  },
   
 }
 </script>
 
 <style lang="scss" scoped>
 
+.category {
+  overflow: scroll;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
 .category-container {
   display: flex;
   align-items: center;
   height: 56px;
-  width: 1680px;
+  width: fit-content;
   border-top: 1px solid #4e4e4e;
   border-bottom: 1px solid #4e4e4e;
   background-color: #212121;
 }
 
-.category-inner-first-container {
-  display: flex;
-  color: #ffffff;
-  font-size: 14px;
-  margin: 12px 12px 12px 24px;
-  padding: 0 12px;
-  border-radius: 16px;
-  background-color: #353535;
-  height: 32px;
-  align-items: center;
-  border: 1px solid #4e4e4e;
+// .category-inner-first-container {
+//   display: flex;
+//   color: #ffffff;
+//   font-size: 14px;
+//   margin: 12px 12px 12px 24px;
+//   padding: 0 12px;
+//   border-radius: 16px;
+//   background-color: #353535;
+//   height: 32px;
+//   align-items: center;
+//   border: 1px solid #4e4e4e;
 
-  &:hover {
-    background-color: #4e4e4e;
-    cursor: pointer;
-  }
+//   &:hover {
+//     background-color: #4e4e4e;
+//     cursor: pointer;
+//   }
+// }
+
+.category-inner-first-container {
+  margin-left: 24px;
 }
 
 .category-inner-container {
@@ -124,6 +151,7 @@ export default {
   border-radius: 16px;
   background-color: #353535;
   height: 32px;
+  width: max-content;
   align-items: center;
   border: 1px solid #4e4e4e;
 
