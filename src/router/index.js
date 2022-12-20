@@ -6,6 +6,8 @@ import { SiteName, TitleSeparator, RouterMode } from '@Config';
 
 import Home from '@View/Home.vue';
 
+import ReplicaYoutube from '@View/ReplicaYoutube.vue' ;
+
 import PrivacyPolicy from '@View/PrivacyPolicy.vue';
 import Refunds from '@View/Refunds.vue';
 import Terms from '@View/Terms.vue';
@@ -19,6 +21,10 @@ const router = new Router({
       path: '/',
       name: 'Home',
       component: Home,
+    },
+    {
+      path: '/replica-youtube',
+      component: ReplicaYoutube,
     },
     {
       path: '/privacy-policy',

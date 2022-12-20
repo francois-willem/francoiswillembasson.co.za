@@ -1,6 +1,6 @@
 <template>
   <div class="app">
-    <main-header></main-header>
+    
     
     <router-view />
 
@@ -15,8 +15,8 @@ import { mapGetters } from 'vuex'
 import api from '@API'
 
 // Components
-import MainHeader from '@Component/Layout/MainHeader.vue'
-import CookieMessage from '@Component/Partials/CookieMessage.vue'
+// import MainHeader from '@Component/Home/MainHeader.vue'
+
 
 // Styles
 import '../../scss/global.scss'
@@ -24,9 +24,10 @@ import '../../scss/global.scss'
 
 export default {
   name: 'App',
+
   components: {
-    MainHeader,
-    CookieMessage,
+    // MainHeader,
+    
   },
   computed: {
   },
@@ -48,6 +49,8 @@ export default {
 </script>
 
 <style lang="scss">
-.app {
-}
+
+
+// .app {
+// }
 </style>

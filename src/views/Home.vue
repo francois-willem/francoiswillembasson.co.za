@@ -1,33 +1,27 @@
 <template>
   <main class="page-content">
-    <div class="main-menus">
-      <sidebar-menu></sidebar-menu>
-      <div class="content">
-         <category-selector></category-selector>
-         <div class="video-content-container">
-          <video-content></video-content>
-        </div>
-      </div>
-    </div>
-    <!-- <main-footer></main-footer> -->
+    <main-header></main-header>
+    <hero></hero>
+    <about></about>
+    <main-footer></main-footer>
   </main>
 </template>
 
 <script>
 
 
+import MainHeader from '@Component/Home/MainHeader.vue';
+import Hero from '@Component/Layout/Hero.vue';
+import About from '@Component/Layout/About.vue';
 import MainFooter from '@Component/Home/Footer.vue'
-import SidebarMenu from '@Component/Layout/SidebarMenu.vue'
-import CategorySelector from '@Component/Layout/CategorySelector.vue'
-import VideoContent from '@Component/Layout/VideoContent.vue'
 
 export default {
   name: 'Home',
   components: {
+    MainHeader,
+    Hero,
+    About,
     MainFooter,
-    SidebarMenu,
-    CategorySelector,
-    VideoContent,
   },
   data() {
     return {

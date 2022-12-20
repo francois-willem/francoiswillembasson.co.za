@@ -11,6 +11,10 @@
       </div>
     </div>
 
+    <!-- <div class="link">
+      <router-link to="/replica-youtube">Youtube Replica</router-link>
+    </div> -->
+
     <div class="header-middle">
       <div class="search-bar">
         <form action="" class="search-box">
@@ -67,7 +71,7 @@ export default {
     SignInIcon,
     SearchIconBefore,
   },
-  name: 'MainHeader',
+  name: 'YoutubeHeader',
   data() {
     return {
       
