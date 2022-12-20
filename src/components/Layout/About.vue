@@ -107,8 +107,17 @@ export default {
   padding-bottom: 20px;
 }
 
+.about-text a {
+  box-shadow: inset 0 0 0 0 #ff0000;
+  color: #fff;
+  margin: 0 -.25rem;
+  padding: 0 .25rem;
+  transition: color .4s ease-in-out, box-shadow .4s ease-in-out;
+}
+
 .about-text a:hover {
-  color: #f70000;
+  box-shadow: inset 200px 0 0 0 #ff0000;
+  color: #fff;
 }
 
 </style>

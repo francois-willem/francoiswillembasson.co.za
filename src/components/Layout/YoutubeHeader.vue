@@ -7,6 +7,7 @@
       </div> 
       <div class="youtube-logo-container">
         <youtube-logo></youtube-logo>
+        <a href="/"></a>
         <span class="country-code">ZA</span>
       </div>
     </div>
@@ -41,7 +42,7 @@
       <div class="option-dots-container">
         <option-dots></option-dots>
       </div>
-      <a href="account.google.com/sigin" class="btn-sign-in">
+      <a href="/" class="btn-sign-in">
         <sign-in-icon></sign-in-icon>
         <div class="sign-in-text">
           SIGN IN

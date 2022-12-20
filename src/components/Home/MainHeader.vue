@@ -16,15 +16,24 @@
       <div v-show="showDropdown" class="dropdown-menu-container">
           <div class="dropdown-menu">
             <div class="dropdown-link">
+              <div class="project-logo">
+                <img :src="images.loveevents" alt="">
+              </div>
               <a href="https://www.loveevents.co.za/" target="_blank">
               Love Events
               </a>
             </div>
             <div class="dropdown-link">
+              <div class="project-logo">
+                <img :src="images.firstaid4life" alt="">
+              </div>
               <a href="https://www.firstaid4life.co.za/" target="_blank">FirstAid4Life
               </a>
             </div>
             <div class="dropdown-link">
+              <div class="project-logo">
+                <img :src="images.youtube" alt="">
+              </div>
               <a href="/replica-youtube">
               Youtube-Replica
               </a>
@@ -40,13 +49,20 @@
 </template>
 
 <script>
-
+import loveevents from '@Asset/images/loveevents-logo.png'
+import firstaid4life from '@Asset/images/firstaid-logo.png'
+import youtube from '@Asset/images/youtube-logo.png'
 
 
 export default {
   name: 'MainHeader',
   data() {
     return {
+      images: {
+        loveevents,
+        firstaid4life,
+        youtube,
+      },
       showDropdown: false
       
     }
@@ -109,10 +125,16 @@ a:hover {
   position: absolute;
   top: 60px;
   left: 1300px;
-  width: 200px;
+  width: 230px;
   max-height: 400px;
   overflow: hidden;
   transition: max-height 0.5s;
+}
+
+@media only screen and (max-width: 1700px){ 
+  .dropdown-menu-container {
+    left: 1125px;
+  }
 }
 
 .dropdown-menu-container.open-menu {
@@ -123,11 +145,11 @@ a:hover {
   display: flex;
   flex-direction: column;
   background: #1d2226;
-  padding: 5px 10px;
-  margin: 10px;
+  padding: 20px;
 }
 
 .dropdown-link {
+  display: flex;
   padding-bottom: 5px;
 }
 
@@ -136,7 +158,13 @@ a:hover {
   align-items: center;
 }
 
+.project-logo {
+  padding-right: 10px;
+}
 
+.project-logo img {
+  width: 20px;
+}
 
 
 </style>
