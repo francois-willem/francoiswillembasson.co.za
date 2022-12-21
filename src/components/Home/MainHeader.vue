@@ -1,18 +1,23 @@
 <template>
   <nav class="navigation">
+
     <div class="logo">
       <a href="">fb</a>
     </div>
+
     <div class="menu">
+
       <div class="menu-container">
         <a href="#">Home</a>
       </div>
+
       <div 
       v-on:click="toggleDropdown(1)"
       :class="{ ' open-menu ': !showDropdown }"
       class="menu-container">
         <a href="#">Projects</a>
       </div>
+
       <div v-show="showDropdown" class="dropdown-menu-container">
           <div class="dropdown-menu">
             <div class="dropdown-link">
@@ -40,8 +45,17 @@
             </div>
           </div>
         </div>
+
       <div class="menu-container">
         <a href="#">Contact me</a>
+      </div>
+      <div class="menu-container-theme">
+        <div class="moon-icon">
+          <img :src="images.moonIcon" alt="">
+        </div>
+        <div class="sun-icon">
+          <img :src="images.sunIcon" alt="">
+        </div>
       </div>
     </div>
   </nav>
@@ -52,6 +66,8 @@
 import loveevents from '@Asset/images/loveevents-logo.png'
 import firstaid4life from '@Asset/images/firstaid-logo.png'
 import youtube from '@Asset/images/youtube-logo.png'
+import moonIcon from '@Asset/images/moon-icon-60.png'
+import sunIcon from '@Asset/images/sun-icon-60.png'
 
 
 export default {
@@ -62,6 +78,8 @@ export default {
         loveevents,
         firstaid4life,
         youtube,
+        moonIcon,
+        sunIcon,
       },
       showDropdown: false
       
@@ -123,7 +141,7 @@ a:hover {
 
 .dropdown-menu-container {
   position: absolute;
-  top: 60px;
+  top: 75px;
   left: 1300px;
   width: 230px;
   max-height: 400px;
@@ -145,7 +163,8 @@ a:hover {
   display: flex;
   flex-direction: column;
   background: #1d2226;
-  padding: 20px;
+  padding: 10px 20px 10px 20px;
+  border-radius: 7px;
 }
 
 .dropdown-link {
@@ -165,6 +184,30 @@ a:hover {
 .project-logo img {
   width: 20px;
 }
+
+.menu-container-theme {
+  display: flex;
+}
+
+.moon-icon {
+  padding-left: 20px;
+  display: block;
+}
+
+.moon-icon img {
+  width: 20px;
+}
+
+.sun-icon {
+  padding-left: 20px;
+  display: block;
+}
+
+.sun-icon img {
+  width: 20px;
+  color: yellow;
+}
+
 
 
 </style>
