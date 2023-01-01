@@ -26,7 +26,7 @@
           </p>
           
           <p>
-            Currently I'm helping out with www.petify.co.za, which is a friend of mine's side hustle. 
+            Currently I'm helping out with <a href="https://petify.co.za/">www.petify.co.za</a>, which is a friend of mine's side hustle. 
             Tech: HTML, SCSS, JavaScript, VueJs, NodeJs, Firebase.
           </p>
           

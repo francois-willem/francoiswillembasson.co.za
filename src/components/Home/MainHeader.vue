@@ -224,10 +224,6 @@ export default {
   animation-iteration-count: 3;
 }
 
-.logo :hover {
-  cursor: crosshair;
-}
-
 .menu a {
   box-shadow: inset 0 0 0 0 #fff;
   color: #fff;
@@ -298,6 +294,7 @@ export default {
   background: #1d2226;
   padding: 10px 20px 10px 20px;
   border-radius: 7px;
+  border: 1.5px solid #080808;
 }
 
 .dropdown-link {
