@@ -2,23 +2,23 @@
   <nav class="navigation">
 
     <div class="logo">
-      <a href="">fb</a>
+      <a href="/">
+        <race-car></race-car>
+      </a>
     </div>
 
     <div class="menu">
 
-      <div class="menu-container">
+      <!-- <div class="menu-container">
         <a href="#">Home</a>
-      </div>
+      </div> -->
 
       <div 
       v-on:click="toggleDropdown(1)"
       :class="{ ' open-menu ': !showDropdown }"
-      class="menu-container">
-        <a href="#">Projects</a>
-      </div>
-
-      <div v-show="showDropdown" class="dropdown-menu-container">
+      class="menu-container-projects">
+        <div class="project-container">Projects</div>
+        <div v-show="showDropdown" class="dropdown-menu-container">
           <div class="dropdown-menu">
             <div class="dropdown-link">
               <div class="project-logo">
@@ -45,20 +45,43 @@
             </div>
           </div>
         </div>
+      </div>
+
+
 
       <div class="menu-container">
         <a href="#">Contact me</a>
       </div>
       <div class="menu-container-theme">
-        <div class="moon-icon">
-          <img :src="images.moonIcon" alt="">
+        <div class="moon-icon-container">
+          <moon-icon></moon-icon>
         </div>
-        <div class="sun-icon">
-          <img :src="images.sunIcon" alt="">
+        <div 
+        v-on:click="toggleLightMode(1)"
+        :class="{ ' light-mode ' : !showLightMode }"
+        class="sun-icon-container">
+          <sun-icon></sun-icon>
         </div>
       </div>
+
+      <div
+      v-on:click="toggleLinkedinHeader(2)"
+      :class="{ ' open-drop ' : !showLinkedinHeader }"
+      class="linkedin-header-button">
+        <div class="dropdown-svg">
+          <dropdown-icon></dropdown-icon>
+        </div>
+        
+      </div>
+      <!-- <div class="linkedin-header-button-drop">
+        <img :src="images.dropDownArrow" alt="">
+      </div> -->
+
     </div>
+
   </nav>
+
+ 
   
 </template>
 
@@ -66,23 +89,35 @@
 import loveevents from '@Asset/images/loveevents-logo.png'
 import firstaid4life from '@Asset/images/firstaid-logo.png'
 import youtube from '@Asset/images/youtube-logo.png'
-import moonIcon from '@Asset/images/moon-icon-60.png'
-import sunIcon from '@Asset/images/sun-icon-60.png'
+import DropdownIcon from '@Component/Partials/svg/DropdownIcon.vue'
+import MoonIcon from '@Component/Partials/svg/MoonIcon.vue'
+import SunIcon from '@Component/Partials/svg/SunIcon.vue'
+import RaceCar from '@Component/Partials/svg/RaceCar.vue'
+
 
 
 export default {
+  components: {
+    DropdownIcon,
+    MoonIcon,
+    SunIcon,
+    RaceCar,
+  },
+
   name: 'MainHeader',
   data() {
     return {
+      
+
       images: {
         loveevents,
         firstaid4life,
         youtube,
-        moonIcon,
-        sunIcon,
+  
       },
-      showDropdown: false
-      
+      showDropdown: false,
+      showLinkedinHeader: true,
+      showLightMode: true
     }
   },
   methods: {
@@ -90,30 +125,110 @@ export default {
       if (number == 1) {
         this.showDropdown = !this.showDropdown
       }
+    },
+    toggleLinkedinHeader(number) {
+      if (number == 2) {
+        this.showLinkedinHeader = !this.showLinkedinHeader
+      }
+    },
+    toggleLightMode(number) {
+      if (number == 1) {
+        this.showLightMode = !this.showLightMode
+      }
     }
   }
 }
 </script>
-<style lang="scss" scoped>
+<style lang="scss">
 @import '../../scss/partials/variables';
 
 .navigation {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
   display: flex;
   justify-content: space-around;
   height: 70px;
   background-color: #1d2226;
   align-items: center;
+  border-bottom: 1px solid #ffffff1f;
+  z-index: 5;
 }
 
-.logo {
-  color: #fff;
+.race-car {
+  fill: #fff;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+@keyframes hvr-buzz-out {
+  10% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  20% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+  30% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  40% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+  50% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
+  60% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  70% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
+  80% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  90% {
+    -webkit-transform: translateX(1px) rotate(0);
+    transform: translateX(1px) rotate(0);
+  }
+  100% {
+    -webkit-transform: translateX(-1px) rotate(0);
+    transform: translateX(-1px) rotate(0);
+  }
+}
+
+.race-car:hover {
+  fill: #ff0000;
+  transition: fill .7s ease-in-out;
+}
+
+.race-car:hover, .race-car:focus, .race-car:active {
+  -webkit-animation-name: hvr-buzz-out;
+  animation-name: hvr-buzz-out;
+  -webkit-animation-duration: 0.75s;
+  animation-duration: 0.75s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: 3;
+  animation-iteration-count: 3;
 }
 
 .logo :hover {
   cursor: crosshair;
 }
 
-a {
+.menu a {
   box-shadow: inset 0 0 0 0 #fff;
   color: #fff;
   margin: 0 -.25rem;
@@ -121,18 +236,40 @@ a {
   transition: color .4s ease-in-out, box-shadow .4s ease-in-out;
 }
 
-a:hover {
+.menu a:hover {
   box-shadow: inset 200px 0 0 0 #fff;
   color: #000;
+}
+
+.project-container {
+  box-shadow: inset 0 0 0 0 #fff;
+  color: #fff;
+  margin: 0 -.25rem;
+  padding: 0 .25rem;
+  transition: color .2s ease-in-out, box-shadow .2s ease-in-out;
+}
+
+.project-container:hover {
+  box-shadow: inset 70px 0 0 0 #fff;
+  color: #000;
+  cursor: pointer;
 }
 
 .menu {
   display: flex;
   color: #fff;
+  // align-items: center;
 }
 
 .menu-container {
   padding-right: 20px;
+  padding-left: 100px;
+}
+
+.menu-container-projects {
+  padding-right: 20px;
+  position: absolute;
+  
 }
 
 .menu-container:hover {
@@ -140,20 +277,16 @@ a:hover {
 }
 
 .dropdown-menu-container {
-  position: absolute;
-  top: 75px;
-  left: 1300px;
+  position: relative;
+  top: 30px;
+  right: 20px;
   width: 230px;
   max-height: 400px;
   overflow: hidden;
   transition: max-height 0.5s;
 }
 
-@media only screen and (max-width: 1700px){ 
-  .dropdown-menu-container {
-    left: 1125px;
-  }
-}
+
 
 .dropdown-menu-container.open-menu {
   max-height: 0px;
@@ -189,25 +322,45 @@ a:hover {
   display: flex;
 }
 
-.moon-icon {
+.moon-icon-container {
   padding-left: 20px;
   display: block;
 }
 
-.moon-icon img {
+.moon-icon {
+  fill: #bcbcbc;
   width: 20px;
 }
 
 .sun-icon {
+  fill: #ffff00;
+  width: 20px;
+}
+
+.sun-icon:hover {
+  cursor: pointer;
+}
+
+.navigation.light-mode {
+  background-color: #fff;
+}
+
+.sun-icon-container {
   padding-left: 20px;
   display: block;
 }
 
-.sun-icon img {
-  width: 20px;
-  color: yellow;
+.linkedin-header-button {
+  padding-left: 20px;
+  fill: #1100ff;
 }
 
+.linkedin-header-button:hover {
+  cursor: pointer;
+}
 
+.linkedin-header-button.open-drop {
+  fill: #fff;
+}
 
 </style>

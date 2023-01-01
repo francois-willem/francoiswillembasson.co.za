@@ -74,7 +74,7 @@ export default {
 .about-parent-container {
   display: flex;
   justify-content: center;
-  padding-top: 20px;
+  padding-top: 5px;
 }
 
 .about-container {

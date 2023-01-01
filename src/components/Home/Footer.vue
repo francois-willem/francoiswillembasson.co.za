@@ -40,7 +40,7 @@ export default {
 @import '../../scss/partials/variables';
 
 .footer-parent-container {
-  padding-top: 20px;
+  padding-top: 5px;
 }
 
 .footer-container {
