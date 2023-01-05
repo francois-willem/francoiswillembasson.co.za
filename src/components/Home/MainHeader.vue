@@ -50,7 +50,7 @@
 
 
       <div class="menu-container">
-        <a href="#">Contact me</a>
+        <a href="mailto:francoiswillembasson@gmail.com">Contact me</a>
       </div>
       <div class="menu-container-theme">
         <div class="moon-icon-container">

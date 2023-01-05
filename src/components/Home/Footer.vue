@@ -11,6 +11,14 @@
         <img :src="images.LinkedinIcon" alt="linkedin icon">
       </a>
     </div>
+    <div class="contact-me-container">
+      <div class="email">
+        <a href="mailto:francoiswillembasson@gmail.com">francoiswillembasson@gmail.com</a>
+      </div>
+      <div class="contact-number">
+        Contact number: (+27) 78 450 7495
+      </div>
+    </div>
   </div>
   
 </template>
@@ -40,19 +48,45 @@ export default {
 @import '../../scss/partials/variables';
 
 .footer-parent-container {
-  padding-top: 5px;
-}
-
-.footer-container {
+  display: flex;
   background-color: #1d2226;
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 20px;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 5px;
+}
+
+@media only screen and (max-width: 550px){
+  .footer-parent-container {
+    padding-left: 5px;
+  }
+}
+
+.footer-container {
+  display: flex;
 }
 
 .footer-container img {
   width: 33px;
   padding-right: 5px;
+  display: flex;
+}
+
+.contact-me-container {
+  color: #fff;
+  padding-left: 10px;
+}
+
+@media only screen and (max-width: 550px){
+  .contact-me-container {
+    font-size: 14px;
+  }
+}
+
+.email {
+  padding-bottom: 5px;
 }
 
 // .footer-container a:last-child {
