@@ -86,7 +86,8 @@ export default {
     return {
       images: {
         DarkLogo,
-      }
+      },
+      showLinkedinHeader: false,
       
     }
   },
@@ -99,7 +100,7 @@ export default {
   }
 }
 </script>
-<style lang="scss" scoped>
+<style lang="scss">
 @import '../../scss/partials/variables';
 
 .left-nav {
@@ -159,9 +160,29 @@ export default {
     width: 150px;
     transition: none;
   }
+}
 
-  .search-container {
-    width: 15opx;
+@media only screen and (max-width: 800px){
+  .input-container input {
+    display: none;
+  }
+  .input-container {
+    width: 40px;
+  }
+  .icon-container {
+    width: 40px;
+  }
+  .search-icon-container {
+    fill: #fff;
+  }
+}
+
+@media only screen and (max-width: 400px){
+  .input-container {
+    width: 30px;
+  }
+  .icon-container {
+    width: 30px;
   }
 }
 
@@ -210,6 +231,12 @@ input:focus {
   color: #ffffff99;
 }
 
+@media only screen and (max-width: 800px){
+  .icon-container {
+    width: 50px;
+  }
+}
+
 .icon-container:hover {
   color: #fff;
 }
@@ -222,8 +249,14 @@ input:focus {
   border-radius: 50%;
 }
 
+@media only screen and (max-width: 800px){
+  .svg-text {
+    display: none;
+  }
+}
+
 // .open-drop {
-//   display: none;
+//   color: #ff0000;
 // }
 
 </style>

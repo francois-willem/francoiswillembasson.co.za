@@ -68,8 +68,20 @@ export default {
   justify-content: center;
 }
 
+@media only screen and (max-width: 800px){
+  .body-content {
+    flex-direction: column;
+  }
+}
+
 .side-content {
   display: flex;
+}
+
+@media only screen and (max-width: 800px){
+  .side-content {
+    justify-content: center;
+  }
 }
 
 .content {

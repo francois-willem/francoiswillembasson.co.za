@@ -42,6 +42,36 @@ export default {
   padding-bottom: 10px;
 }
 
+@media only screen and (max-width: 1200px){
+  .skills-container {
+    width: 630px;
+  }
+}
+
+@media only screen and (max-width: 1000px){
+  .skills-container {
+    width: 400px;
+  }
+}
+
+@media only screen and (max-width: 800px){
+  .skills-container {
+    width: 500px;
+  }
+}
+
+@media only screen and (max-width: 550px){
+  .skills-container {
+    width: 380px;
+  }
+}
+
+@media only screen and (max-width: 400px){
+  .skills-container {
+    width: 350px;
+  }
+}
+
 .skills-header {
   color: #fff;
   font-size: 20px;

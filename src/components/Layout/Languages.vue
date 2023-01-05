@@ -45,6 +45,36 @@ export default {
   padding-bottom: 10px;
 }
 
+@media only screen and (max-width: 1200px){
+  .language-container {
+    width: 630px;
+  }
+}
+
+@media only screen and (max-width: 1000px){
+  .language-container {
+    width: 400px;
+  }
+}
+
+@media only screen and (max-width: 800px){
+  .language-container {
+    width: 500px;
+  }
+}
+
+@media only screen and (max-width: 550px){
+  .language-container {
+    width: 380px;
+  }
+}
+
+@media only screen and (max-width: 400px){
+  .language-container {
+    width: 350px;
+  }
+}
+
 .language-header {
   color: #fff;
   font-size: 20px;

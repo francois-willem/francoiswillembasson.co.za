@@ -51,6 +51,12 @@ export default {
   padding-top: 25px;
 }
 
+@media only screen and (max-width: 800px){
+  .hero-container-parent {
+    padding-top: 10px;
+  }
+}
+
 .hero-container {
   border-top-left-radius: 7px;
   background-color: #1d2226;
@@ -58,10 +64,70 @@ export default {
   width: 800px;
 }
 
+@media only screen and (max-width: 1200px){
+  .hero-container {
+    width: 630px;
+  }
+}
+
+@media only screen and (max-width: 1000px){
+  .hero-container {
+    width: 400px;
+  }
+}
+
+@media only screen and (max-width: 800px){
+  .hero-container {
+    width: 500px;
+  }
+}
+
+@media only screen and (max-width: 550px){
+  .hero-container {
+    width: 380px;
+  }
+}
+
+@media only screen and (max-width: 400px){
+  .hero-container {
+    width: 350px;
+  }
+}
+
 .hero-container-image img {
   border-top-left-radius: 7px;
   border-top-right-radius: 7px;
   width: 800px;
+}
+
+@media only screen and (max-width: 1200px){
+  .hero-container-image img {
+    width: 630px;
+  }
+}
+
+@media only screen and (max-width: 1000px){
+  .hero-container-image img {
+    width: 400px;
+  }
+}
+
+@media only screen and (max-width: 800px){
+  .hero-container-image img {
+    width: 500px;
+  }
+}
+
+@media only screen and (max-width: 550px){
+  .hero-container-image img {
+    width: 380px;
+  }
+}
+
+@media only screen and (max-width: 550px){
+  .hero-container-image img {
+    width: 350px;
+  }
 }
 
 .profile-pic {
@@ -76,8 +142,26 @@ export default {
   border-radius: 50%;
 }
 
+@media only screen and (max-width: 1000px){
+  .profile-pic img {
+    width: 120px;
+  }
+}
+
+@media only screen and (max-width: 550px){
+  .profile-pic img {
+    width: 100px;
+  }
+}
+
 .hero-text {
   padding: 90px 0 20px 25px;
+}
+
+@media only screen and (max-width: 1000px){
+  .hero-text {
+    padding-top: 70px;
+  }
 }
 
 .hero-full-name {

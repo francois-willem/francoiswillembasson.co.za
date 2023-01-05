@@ -12,7 +12,9 @@
           </div>
           <div class="contacts-info">
             <div class="contacts-name">
+              <a href="https://www.linkedin.com/in/trystan-yslie-35b75b1b5/" target="_blank">
               Trystan Yslie
+              </a>
             </div>
             <div class="contacts-occupation">
               <p>Retail Assistant at</p>
@@ -39,10 +41,13 @@
           </div>
           <div class="contacts-info">
             <div class="contacts-name">
+              <a href="https://www.linkedin.com/in/cscottsa/" target="_blank">
               Christian Scott
+              </a>
             </div>
             <div class="contacts-occupation">
-              Javascript Engineer at White Hat Gaming
+              <p>Javascript Engineer at</p>
+              <p>White Hat Gaming</p>
             </div>
             <a href="https://www.linkedin.com/in/cscottsa/" target="_blank">
               <div class="contacts-connect-button">
@@ -64,10 +69,13 @@
           </div>
           <div class="contacts-info">
             <div class="contacts-name">
+              <a href="https://www.linkedin.com/in/neil-benjamin-547805a7/" target="_blank">
               Neil Benjamin
+              </a>
             </div>
             <div class="contacts-occupation">
-              Web Development, Music Education, Sound Design
+              <p>Web Development, Music Education,</p>
+              <p>Sound Design</p>
             </div>
             <a href="https://www.linkedin.com/in/neil-benjamin-547805a7/" target="_blank">
               <div class="contacts-connect-button">
@@ -90,7 +98,9 @@
           </div>
           <div class="contacts-info">
             <div class="contacts-name">
+              <a href="https://www.linkedin.com/in/neil-basson-54627b215/" target="_blank">
               Neil Basson
+              </a>
             </div>
             <div class="contacts-occupation">
               <p>Receiving administrator at</p>
@@ -147,6 +157,13 @@ export default {
   padding-top: 25px;
 }
 
+@media only screen and (max-width: 800px){
+  .contacts-parent-container {
+    padding-left: 0;
+    padding-top: 5px;
+  }
+}
+
 .contacts-container {
   width: 300px;
   height: fit-content;
@@ -155,6 +172,36 @@ export default {
   padding-bottom: 10px;
   padding-left: 25px;
   padding-right: 25px;
+}
+
+@media only screen and (max-width: 1200px){
+  .contacts-container {
+    width: 280px;
+  }
+}
+
+@media only screen and (max-width: 800px){
+  .contacts-container {
+    width: 400px;
+  }
+}
+
+@media only screen and (max-width: 800px){
+  .contacts-container {
+    width: 500px;
+  }
+}
+
+@media only screen and (max-width: 550px){
+  .contacts-container {
+    width: 380px;
+  }
+}
+
+@media only screen and (max-width: 400px){
+  .contacts-container {
+    width: 350px;
+  }
 }
 
 // .language-text {
@@ -178,6 +225,11 @@ export default {
 .contacts-name {
   color: #fff;
   padding-bottom: 3px;
+}
+
+.contacts-name:hover {
+  color: #70b5f9;
+  text-decoration: underline;
 }
 
 .contacts-occupation {

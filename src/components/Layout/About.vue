@@ -84,6 +84,36 @@ export default {
   border-radius: 7px;
 }
 
+@media only screen and (max-width: 1200px){
+  .about-container {
+    width: 630px;
+  }
+}
+
+@media only screen and (max-width: 1000px){
+  .about-container {
+    width: 400px;
+  }
+}
+
+@media only screen and (max-width: 800px){
+  .about-container {
+    width: 500px;
+  }
+}
+
+@media only screen and (max-width: 550px){
+  .about-container {
+    width: 380px;
+  }
+}
+
+@media only screen and (max-width: 400px){
+  .about-container {
+    width: 350px;
+  }
+}
+
 .about-header {
   padding: 20px 0 10px 25px;
 }

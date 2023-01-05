@@ -117,7 +117,7 @@ export default {
       },
       showDropdown: false,
       showLinkedinHeader: true,
-      showLightMode: true
+      showLightMode: true,
     }
   },
   methods: {
@@ -224,6 +224,12 @@ export default {
   animation-iteration-count: 3;
 }
 
+@media only screen and (max-width: 550px) {
+  .race-car {
+    width: 45px;
+  }
+}
+
 .menu a {
   box-shadow: inset 0 0 0 0 #fff;
   color: #fff;
@@ -260,6 +266,13 @@ export default {
 .menu-container {
   padding-right: 20px;
   padding-left: 100px;
+}
+
+@media only screen and (max-width: 550px) {
+  .menu-container {
+    padding-left: 80px;
+    padding-right: 10px;
+  }
 }
 
 .menu-container-projects {
@@ -347,6 +360,16 @@ export default {
   display: block;
 }
 
+@media only screen and (max-width: 550px) {
+  .moon-icon-container {
+    padding-left: 10px
+  }
+
+  .sun-icon-container {
+    padding-left: 10px;
+  }
+}
+
 .linkedin-header-button {
   padding-left: 20px;
   fill: #1100ff;
@@ -359,5 +382,10 @@ export default {
 .linkedin-header-button.open-drop {
   fill: #fff;
 }
+
+// .open-drop {
+//   color: red;
+//   height: 200px;
+// }
 
 </style>
