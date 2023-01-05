@@ -2,11 +2,21 @@
   <main class="page-content">
     <main-header></main-header>
     <linkedin-header></linkedin-header>
-    <hero></hero>
-    <about></about>
-    <skills></skills>
-    <languages></languages>
+    <div class="body-content">
+      <div class="main-content">
+        <hero></hero>
+        <about></about>
+        <skills></skills>
+        <languages></languages>
+      </div>
+      <div class="side-content">
+        <contacts></contacts>
+      </div>
+    </div>
     <main-footer></main-footer>
+      
+    
+    
   </main>
 </template>
 
@@ -20,6 +30,7 @@ import MainFooter from '@Component/Home/Footer.vue'
 import LinkedinHeader from '@Component/Home/LinkedinHeader.vue'
 import Skills from '@Component//Layout/Skills.vue'
 import Languages from '@Component/Layout/Languages.vue'
+import Contacts from '@Component/Layout/Contacts.vue'
 
 export default {
   name: 'Home',
@@ -31,6 +42,7 @@ export default {
     LinkedinHeader,
     Skills,
     Languages,
+    Contacts,
   },
   data() {
     return {
@@ -42,6 +54,21 @@ export default {
 @import '../scss/partials/variables';
 
 .main-menus {
+  display: flex;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.body-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.side-content {
   display: flex;
 }
 

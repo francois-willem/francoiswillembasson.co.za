@@ -3,7 +3,7 @@
 
     <div class="logo">
       <a href="/">
-        <race-car></race-car>
+        <Porsche></Porsche>
       </a>
     </div>
 
@@ -92,7 +92,7 @@ import youtube from '@Asset/images/youtube-logo.png'
 import DropdownIcon from '@Component/Partials/svg/DropdownIcon.vue'
 import MoonIcon from '@Component/Partials/svg/MoonIcon.vue'
 import SunIcon from '@Component/Partials/svg/SunIcon.vue'
-import RaceCar from '@Component/Partials/svg/RaceCar.vue'
+import Porsche from '@Component/Partials/svg/Porsche.vue'
 
 
 
@@ -101,7 +101,7 @@ export default {
     DropdownIcon,
     MoonIcon,
     SunIcon,
-    RaceCar,
+    Porsche,
   },
 
   name: 'MainHeader',
@@ -209,7 +209,7 @@ export default {
 }
 
 .race-car:hover {
-  fill: #ff0000;
+  fill: #0a69f8;
   transition: fill .7s ease-in-out;
 }
 

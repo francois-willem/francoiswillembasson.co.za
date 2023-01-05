@@ -5,11 +5,12 @@
       <div class="burger-icon-container">
         <burger-icon></burger-icon>
       </div> 
-      <div class="youtube-logo-container">
-        <youtube-logo></youtube-logo>
-        <a href="/"></a>
-        <span class="country-code">ZA</span>
-      </div>
+      <a href="/">
+        <div class="youtube-logo-container">
+          <youtube-logo></youtube-logo>
+          <span class="country-code">ZA</span>
+        </div>
+      </a>
     </div>
 
     <!-- <div class="link">

@@ -104,6 +104,7 @@ export default {
 <style lang="scss" scoped>
 
 .category {
+  margin-top: 56px;
   overflow: scroll;
   &::-webkit-scrollbar {
     display: none;
