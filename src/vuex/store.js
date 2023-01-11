@@ -5,6 +5,8 @@ const debug = process.env.NODE_ENV !== 'production'
 const defaultState = {
   devMode: process.env.NODE_ENV !== 'production',
 
+  showLinkedinHeader: true,
+
   ///////////////////////////////////////
   // Utility
   ///////////////////////////////////////
@@ -25,6 +27,10 @@ const storeConfig = {
   },
   state: new setDefaultState(),
   mutations: {
+
+    setShowLinkedinHeader(state, payload) {
+      state.showLinkedinHeader = payload.showLinkedinHeader
+    },
     /***********************
      * Utility
      ***********************/

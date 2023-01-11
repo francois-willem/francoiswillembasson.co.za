@@ -9,7 +9,9 @@
         <p>Javascript</p>
         <p>HTML5</p>
         <p>SASS</p>
-        <p>And much more... Just give me some time</p>
+        <p>CSS</p>
+        <p>Responsive Web Design</p>
+        <p>... more to follow soon. I'm constantly experimenting and expanding my skillset.</p>
       </div>
     </div>
   </div>

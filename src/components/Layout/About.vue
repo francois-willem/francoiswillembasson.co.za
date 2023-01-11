@@ -17,7 +17,7 @@
           </p>
           
           <p>
-            I started off by helping with HTML and CSS for a month or so, and then started diving into JavaScript, learning on the go, go see in the Projects section. My first solo site was hardcoding <a href="https://www.loveevents.co.za/" target="_blank">https://www.loveevents.co.za/</a>  pure HTML and CSS. Another site I built was <a href="https://www.firstaid4life.co.za/" target="_blank">https://www.firstaid4life.co.za/</a>.
+            I started off by helping with HTML and CSS for a month or so, and then started diving into JavaScript, learning on the go, go see in the Projects section. My first solo site was hardcoding <a href="https://www.loveevents.co.za/" target="_blank">www.loveevents.co.za/</a>  pure HTML and CSS. Another site I built was <a href="https://www.firstaid4life.co.za/" target="_blank">www.firstaid4life.co.za/</a>.
           </p>
           
 

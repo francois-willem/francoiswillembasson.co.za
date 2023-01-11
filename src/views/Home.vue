@@ -1,8 +1,8 @@
 <template>
   <main class="page-content">
     <main-header></main-header>
-    <linkedin-header></linkedin-header>
-    <div class="body-content">
+    <linkedin-header v-if="showLinkedinHeader"></linkedin-header>
+    <div class="body-content" :class="{ 'body-content--linkedinHeaderHidden': !showLinkedinHeader }">
       <div class="main-content">
         <hero></hero>
         <about></about>
@@ -48,6 +48,11 @@ export default {
     return {
     }
   },
+  computed: {
+    showLinkedinHeader() {
+      return this.$store.state.showLinkedinHeader
+    }
+  },
 }
 </script>
 <style lang="scss" scoped>
@@ -72,6 +77,10 @@ export default {
   .body-content {
     flex-direction: column;
   }
+}
+
+.body-content--linkedinHeaderHidden {
+  padding-top: 70px;
 }
 
 .side-content {

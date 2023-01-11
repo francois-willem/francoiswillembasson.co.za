@@ -3,6 +3,7 @@
     <div class="hero-container">
       <div class="hero-container-image">
         <img :src="images.BackgroundPhoto" alt="">
+
       </div>
       <div class="profile-pic">
         <img :src="images.ProfilePic" alt="">
@@ -46,6 +47,7 @@ export default {
 @import '../../scss/partials/variables';
 
 .hero-container-parent {
+  position: relative;
   display: flex;
   justify-content: center;
   padding-top: 25px;
@@ -136,31 +138,46 @@ export default {
 
 .profile-pic img {
   width: 180px;
-  top: 196px;
+  top: 110px;
   position: absolute;
   border: 4px solid #1d2226;
   border-radius: 50%;
 }
 
+@media only screen and (max-width: 1200px){
+  .profile-pic img {
+    width: 160px;
+    top: 90px;
+  }
+}
+
 @media only screen and (max-width: 1000px){
   .profile-pic img {
-    width: 120px;
+    width: 110px;
+    top: 65px;
   }
 }
 
 @media only screen and (max-width: 550px){
   .profile-pic img {
     width: 100px;
+    top: 40px;
   }
 }
 
 .hero-text {
-  padding: 90px 0 20px 25px;
+  padding: 75px 0 20px 25px;
 }
 
 @media only screen and (max-width: 1000px){
   .hero-text {
-    padding-top: 70px;
+    padding-top: 60px;
+  }
+}
+
+@media only screen and (max-width: 800px){
+  .hero-text {
+    padding-top: 45px;
   }
 }
 

@@ -116,8 +116,12 @@ export default {
   
       },
       showDropdown: false,
-      showLinkedinHeader: true,
       showLightMode: true,
+    }
+  },
+  computed: {
+    showLinkedinHeader() {
+      return this.$store.state.showLinkedinHeader
     }
   },
   methods: {
@@ -126,10 +130,10 @@ export default {
         this.showDropdown = !this.showDropdown
       }
     },
-    toggleLinkedinHeader(number) {
-      if (number == 2) {
-        this.showLinkedinHeader = !this.showLinkedinHeader
-      }
+    toggleLinkedinHeader() {
+      this.$store.commit('setShowLinkedinHeader', {
+        showLinkedinHeader: !this.showLinkedinHeader
+      })
     },
     toggleLightMode(number) {
       if (number == 1) {
