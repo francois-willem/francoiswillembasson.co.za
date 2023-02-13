@@ -13,7 +13,7 @@
         <contacts></contacts>
       </div>
     </div>
-    <main-footer></main-footer>
+    <main-footer></main-footer> 
       
     
     
@@ -98,5 +98,7 @@ export default {
   overflow: hidden;
 }
 
-
+input {
+  margin-top: 20px;
+}
 </style>

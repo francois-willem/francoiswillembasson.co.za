@@ -43,6 +43,22 @@
               Youtube-Replica
               </a>
             </div>
+            <div class="dropdown-link">
+              <div class="project-logo">
+                <img :src="images.youtube" alt="">
+              </div>
+              <a href="/weather">
+              Weather App
+              </a>
+            </div>
+            <div class="dropdown-link">
+              <div class="project-logo">
+                <img :src="images.youtube" alt="">
+              </div>
+              <a href="/movie-search">
+              Movie Search
+              </a>
+            </div>
           </div>
         </div>
       </div>

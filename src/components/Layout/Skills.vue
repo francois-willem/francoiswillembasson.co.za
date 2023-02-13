@@ -23,8 +23,22 @@
 export default {
   name: 'Skills',
   data() {
+    return {
 
+    }
   },
+  created(){
+    this.testMethod()
+  },
+  methods: {
+    testMethod() {
+      console.log('Hello World!')
+      this.anotherTestMethod()
+    },
+    anotherTestMethod() {
+      console.log('Bye World!')
+    }
+  }
 }
 </script>
 
