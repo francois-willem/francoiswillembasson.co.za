@@ -13,7 +13,7 @@
           Francois-Willem Basson
         </div>
         <div class="hero-occupation">
-          Software Developer
+          Front-end Developer
         </div>
         <div class="hero-address">
           City of Cape Town, Western Cape, South Africa
@@ -28,7 +28,7 @@
 
 <script>
 import BackgroundPhoto from '@Asset/images/background-photo.jpeg'
-import ProfilePic from '@Asset/images/profile-pic.png'
+import ProfilePic from '@Asset/images/LinkedinV1.jpg'
 
 
 export default {

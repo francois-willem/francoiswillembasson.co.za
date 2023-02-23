@@ -9,43 +9,20 @@
       <div class="about-text-container">
         <div class="about-text">
           <p>
-            I'm well spoken in English, Afrikaans(native) and study German on the side.
+            Whether I'm revving up my engine on the racetrack or writing clean and efficient code, I'm always looking for new ways to improve and grow.
           </p>
-          
           <p>
-            For the past year and a half, I've been involved in a few web development projects, collaborating with friends of mine in the development industry. Currently I'm available for a tech related position with a vision to grow into a developer role over time.
+            With 1.5 years of hands-on experience in front-end development, I bring a well-rounded skillset to the table, including HTML, CSS, SASS, Javascript, Vue.js, Responsive web design, Git, and REST API experience. I've honed my craft on real projects (see the Projects section, references are available upon request) and have more experience under my belt than most Junior developers out there. 
           </p>
-          
           <p>
-            I started off by helping with HTML and CSS for a month or so, and then started diving into JavaScript, learning on the go, go see in the Projects section. My first solo site was hardcoding <a href="https://www.loveevents.co.za/" target="_blank">www.loveevents.co.za/</a>  pure HTML and CSS. Another site I built was <a href="https://www.firstaid4life.co.za/" target="_blank">www.firstaid4life.co.za/</a>.
+            I am the ideal candidate for companies seeking a semi-skilled professional who is ready to hit the ground running and bring immediate value to the team.
           </p>
-          
-
           <p>
-            I then started building a replica of Youtube's home page to showcase my skills. This will also be found under projects.
+            About my past? Since a young age I felt inspired to become an Accountant as I've always been good with maths and the sideline interest in trading and investing. So I studied Accounting for a few years, but realised my true passion for Software Development and made the daring switch to the tech Industry.
           </p>
-          
-          <p>
-            Currently I'm helping out with <a href="https://petify.co.za/">www.petify.co.za</a>, which is a friend of mine's side hustle. 
-            Tech: HTML, SCSS, JavaScript, VueJs, NodeJs, Firebase.
-          </p>
-          
-          <p>
-            Since a young age I felt inspired to become an Accountant as I've always been good with maths and the sideline interest in trading and investing. So I studied Accounting for a few years, but realised my true passion for Software Development and Design and made the daring switch to the tech Industry.
-          </p>
-          
-          <p>
-            I see myself as a valuable asset to any company that shares in my desire to grow and strive to be the best at what they do.
-          </p>
-          
-          <p>
-            Interests: Motorsport, Rugby, Gym, Football
-          </p>
-          
           <p>
             I do not cease to impress.
           </p>
-          
         </div>
       </div>
         

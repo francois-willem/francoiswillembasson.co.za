@@ -52,7 +52,7 @@
         <div class="svg-text">Messaging</div>
       </div>
       <div class="icon-container">
-        <img width="24" src="https://media.licdn.com/dms/image/C5603AQHSJm2JqW6mNw/profile-displayphoto-shrink_100_100/0/1636404989933?e=1677110400&amp;v=beta&amp;t=2HJES8cdlkgW00uu6ysvh7Qrk9bDKffj3skaFwC8ezY" height="24" alt="Francois-Willem Basson" class="linkedin-profile-pic">
+        <img width="24" src="https://media.licdn.com/dms/image/D4D03AQFWMydgabIhMQ/profile-displayphoto-shrink_100_100/0/1676036302807?e=1681948800&v=beta&t=65KcZO8ICo69F7khWWk-l1Fy5wUyzNk4LCddiyHDWok" height="24" alt="Francois-Willem Basson" class="linkedin-profile-pic">
         <div class="svg-text">Me</div>
       </div>
       <div class="icon-container">
