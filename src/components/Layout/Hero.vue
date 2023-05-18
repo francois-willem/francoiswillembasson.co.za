@@ -3,7 +3,7 @@
     <div class="hero-container">
       <div class="hero-container-image">
         <img :src="images.BackgroundPhoto" alt="">
-
+        
       </div>
       <div class="profile-pic">
         <img :src="images.ProfilePic" alt="">
@@ -31,6 +31,7 @@ import BackgroundPhoto from '@Asset/images/background-photo.jpeg'
 import ProfilePic from '@Asset/images/LinkedinV1.jpg'
 
 
+
 export default {
   name: 'Hero',
   data() {
@@ -41,6 +42,10 @@ export default {
       }
     }
   },
+  components: {
+  
+  },
+  
 }
 </script>
 <style lang="scss" scoped>

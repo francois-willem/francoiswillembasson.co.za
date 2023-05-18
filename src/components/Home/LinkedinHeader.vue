@@ -52,7 +52,7 @@
         <div class="svg-text">Messaging</div>
       </div>
       <div class="icon-container">
-        <img width="24" src="https://media.licdn.com/dms/image/D4D03AQFWMydgabIhMQ/profile-displayphoto-shrink_100_100/0/1676036302807?e=1681948800&v=beta&t=65KcZO8ICo69F7khWWk-l1Fy5wUyzNk4LCddiyHDWok" height="24" alt="Francois-Willem Basson" class="linkedin-profile-pic">
+        <img :src="images.ProfilePic" class="linkedin-profile-pic">
         <div class="svg-text">Me</div>
       </div>
       <div class="icon-container">
@@ -74,6 +74,7 @@ import DarkLogo from '@Asset/images/fb-logo-dark.jpeg'
 
 import DarkLogoFb from '@Component/Partials/svg/logo-fb-dark.vue'
 import SearchIcon from '@Component/Partials/svg/SearchIcon.vue'
+import ProfilePic from '@Asset/images/LinkedinV1.jpg'
 
 export default {
   components: {
@@ -86,6 +87,7 @@ export default {
     return {
       images: {
         DarkLogo,
+        ProfilePic,
       },
       showLinkedinHeader: false,
       
@@ -247,6 +249,8 @@ input:focus {
 
 .linkedin-profile-pic {
   border-radius: 50%;
+  width: 24px;
+  height: 24px;
 }
 
 @media only screen and (max-width: 800px){
