@@ -9,7 +9,7 @@
       <div class="about-text-container">
         <div class="about-text">
           <p>
-            Whether I'm revving up my engine on the racetrack or writing clean and efficient code, I'm always looking for new ways to improve and grow.
+            As a frontend developer, I embrace the art of crafting intuitive user experiences like a pro. But when I'm not coding, you'll find me juggling between debugging code and changing diapers with unmatched precision. When I'm not immersed in the world of pixels, I channel my inner gamer, exploring virtual realms and conquering digital quests. And if that's not enough excitement, you might catch me tearing up the streets on my bike or geeking out over the latest car tech innovations. Coding, diapers, games, bikes, and cars – my life is an exhilarating blend of pixels and parenthood!
           </p>
           <p>
             With 1.5 years of hands-on experience in front-end development, I bring a well-rounded skillset to the table, including HTML, CSS, SASS, Javascript, Vue.js, Responsive web design, Git, and REST API experience. I've honed my craft on real projects (see the Projects section, references are available upon request) and have more experience under my belt than most Junior developers out there. 
