@@ -62,7 +62,6 @@
     "vue-cookie": "^1.1.4",
     "vue-meta": "^2.4.0",
     "vue-router": "^3.5.2",
-    "vue-waypoint": "^4.2.5",
     "vuex": "^3.5.1"
   },
   "devDependencies": {
